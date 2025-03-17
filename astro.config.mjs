@@ -1,14 +1,16 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 
-import markdoc from '@astrojs/markdoc';
+import markdoc from "@astrojs/markdoc";
 
-import vercel from '@astrojs/vercel';
+import vercel from "@astrojs/vercel";
 
-import mdx from '@astrojs/mdx';
+import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [markdoc(), mdx()],
-  adapter: vercel()
+	integrations: [markdoc(), mdx()],
+	prefetch: true,
+	output: "server",
+	adapter: vercel(),
 });
