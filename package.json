@@ -9,6 +9,8 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/markdoc": "^0.13.0",
+    "@astrojs/vercel": "^8.1.2",
     "astro": "^5.5.2"
   }
 }
